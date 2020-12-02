@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="guest-form-card card">
+
+      <div class="card-header text-center">
+        <h2>Register Here</h2>
+      </div>
+
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Nama Depan</label>
+            <input [(ngModel)]="datauser.namadepan" type="text" class="form-control" name="nama depan"/>
+            <span class="invalid-feedback">Name can't be blank.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name Belakang</label>
+            <input [(ngModel)]="datauser.namabelakang" type="text" class="form-control" name="nama belakang"/>
+            <span class="invalid-feedback">Name can't be blank.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Umur</label>
+            <input [(ngModel)]="datauser.umur" type="text" class="form-control" name="umur"/>
+            <span class="invalid-feedback">Name can't be blank.</span>
+          </div>
+        
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input [(ngModel)]="datauser.email" type="text" class="form-control" name="email"/>
+            <span class="invalid-feedback">
+              <span>Email can't be blank.</span>
+              <span>Email must be valid.</span>
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input [(ngModel)]="datauser.username" type="text" class="form-control" name="username"/>
+            <span class="invalid-feedback">Username can't be blank.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input [(ngModel)]="datauser.password" type="password" class="form-control" name="password"/>
+            <span class="invalid-feedback">
+              <span >Password can't be blank.</span>
+              <span >Password must contain @</span>
+              <span>Password must contain minimum 4 characters</span>
+            </span>
+          </div>
+          <button (click)="RegisterUser()" type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

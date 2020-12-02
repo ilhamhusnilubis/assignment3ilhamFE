@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="guest-form-card card">
+
+      <div class="card-header text-center">
+        <h2>Login Here</h2>
+      </div>
+
+      <div class="card-body">
+        <form>
+            <div class="form-group">
+              <label class="col-md-4">Username</label>
+              <input [(ngModel)]="loginData.username" type="username" class="form-control" name="username"/>
+              </div>
+              <div class="form-group">
+                <label class="col-md-4">Password</label>
+                <input [(ngModel)]="loginData.password" type="password" class="form-control" name="password"/>
+                </div>
+              <div class="form-group">
+                <button (click)="loginUser()" type="submit" class="btn btn-primary">Login</button>
+              </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label class="col-md-4">Username</label>
+            <input [(ngModel)]="loginData.username" type="username" class="form-control" name="username"/>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Password</label>
+              <input [(ngModel)]="loginData.password" type="password" class="form-control" name="password"/>
+              </div>
+            <div class="form-group">
+              <button (click)="loginUser()" type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+        <p class="register"><a href="register">haven't account!</a></p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+      </div>
+    
+    </div>
+  </div>
+</div>  -->
